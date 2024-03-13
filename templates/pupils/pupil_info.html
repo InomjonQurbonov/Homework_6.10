@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}
+	Pupil info
+{% endblock %}
+
+{% block content %}
+	<h1>{{ pupil.name }}</h1>
+    <h2>Marks:{{ pupil.all_points }}</h2>
+    <ul>
+        <li>First month:{{ pupil.month_1 }}</li>
+        <li>Second month:{{ pupil.month_2 }}</li>
+        <li>Third month:{{ pupil.month_3 }}</li>
+
+    </ul>
+{% endblock %}
